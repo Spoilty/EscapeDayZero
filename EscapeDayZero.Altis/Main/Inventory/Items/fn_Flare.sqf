@@ -1,0 +1,60 @@
+if (edz_usingFlare) exitWith {hint "You are already using a flare";};
+[false,"flare",1] call EDZC_fnc_handleItem;
+edz_usingFlare = true;
+[] spawn {sleep 2;player say3D "flare";};
+edz_flareAction = player addAction ["Extinguish Flare",{edz_usingFlare=false;deleteVehicle edz_myFlare;player removeAction edz_flareAction;}];
+[] spawn {
+	sleep 3;
+	for "_x" from 1 to 37 do
+	{
+		playSound "flareIdle";
+		sleep 9;
+		if (surfaceIsWater position player || !edz_usingFlare) exitWith {};
+	};
+};
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+if (!edz_usingFlare) exitWith {};
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+edz_myFlare = "F_20mm_Red" createvehicle position player;
+edz_myFlare attachTo [player, [-0.03,-.105,0], "RightHandMiddle1"];
+sleep 20;
+
+
+edz_usingFlare = false;

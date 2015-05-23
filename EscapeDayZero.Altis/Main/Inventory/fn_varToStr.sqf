@@ -1,0 +1,24 @@
+_itemToConvert = _this select 0;
+_ret = "";
+switch (_itemToconvert) do {
+	case "flare": {_ret = "Flare (5 Minutes Duration)";};
+	case "lockpick": {_ret = "Lockpick";};
+	case "coca": {_ret = "Coca Cola Soda";};
+	case "mountaindew": {_ret = "Mountain Dew Soda";};
+	case "bakedbeans": {_ret = "Can of Baked Beans";};
+	case "banana": {_ret = "Fresh Banana";};
+	case "apple": {_ret = "Fresh Apple";};
+	case "sardines": {_ret = "Can of Sardines";};
+	case "fuelcanister": {_ret = "Fuel Canister Full";};
+	case "fuelcanister_empty": {_ret = "Fuel Canister Empty";};
+	case "morphine": {_ret = "Morphine Autoinjector";};
+	case "bandage": {_ret = "Bandage";};
+	case "rice": {_ret = "Rice";};
+	case "matches": {_ret = "Matches";};
+	case "generator": {_ret = "Portable Generator";};
+	case "canteen": {_ret = "Full Water Canteen";};
+	case "canteen_empty": {_ret = "Empty Water Canteen";};
+	case "gascanister": {_ret = "Small Gas Canister";};
+	case "cereals": {_ret = "Pack of Cereals";};
+};
+_ret;

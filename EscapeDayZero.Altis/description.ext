@@ -1,0 +1,32 @@
+author = "OPTiX";
+enableDebugConsole = 1;
+onLoadName = "Escape Day Zero 0.3";
+onLoadMission = "Horror Survival Mission developed by OPTiX";
+joinUnassigned = 1;
+disabledAI = true;
+disableChannels[]={0,1,2};
+respawnDialog = 0;
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 20;
+};
+
+wreckLimit = 30;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+corpseLimit = 150;
+corpseRemovalMinTime = 999;
+corpseRemovalMaxTime = 9999;
+
+// Includes
+#include "Dialogs\MasterHandler.h"
+class CfgFunctions
+{
+	#include "Functions.h"
+};
+class CfgSounds
+{
+	#include "Sounds.h"
+};

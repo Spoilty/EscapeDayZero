@@ -1,0 +1,12 @@
+//[] execVM "\edz_server\Functions\fn_turnOffLight.sqf";
+ort1=false;
+ort2=false;
+ort3=false;
+ort4=false;
+ort5=false;
+ort6=false;
+ort7=false;
+ort8=false;
+ort9=false;
+ort10=false;
+ort11=false;
