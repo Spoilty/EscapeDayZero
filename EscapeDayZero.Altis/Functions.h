@@ -29,7 +29,7 @@ class Socket_Reciever
 		class Flare {};
 		class Lockpick {};
 		class Consume {};
-		class Morphine {};
+//		class Morphine {};
 	};
 	class Messages
 	{
